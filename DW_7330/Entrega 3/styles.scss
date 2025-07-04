@@ -1,0 +1,105 @@
+// Variables
+$primary-color: #ccc;
+$secondary-color: #333;
+$shadow-color: yellow;
+$text-color: white;
+$light-bg: #f8f9fa;
+$light-text: #212529;
+$dark-bg: #121212;
+$dark-text: #f1f1f1;
+
+
+body {
+  background-color: $light-bg;
+  color: $light-text;
+
+  .card {
+    background-color: white;
+    color: $light-text;
+  }
+}
+
+// Tema oscuro cuando el checkbox está activo
+#darkToggle:checked ~ .page {
+  background-color: $dark-bg;
+  color: $dark-text;
+  padding: 20px;
+
+  .card {
+    background-color: #1e1e1e;
+    color: $dark-text;
+  }
+}
+
+
+@mixin flex-center($direction: row, $gap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin scroll-style($thumb, $track) {
+  scrollbar-color: $thumb $track;
+  scrollbar-width: thin;
+}
+
+
+// Animaciones
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Extends
+%card-style {
+  padding: 10px;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 100px $primary-color;
+  animation: fade-in 1s ease-in-out;
+}
+
+header {
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+
+    div {
+        display: flex;
+        gap: 20px;
+        ;
+    }
+}
+
+.cards-container {
+  width: 90%;
+  @include flex-center(row, 30px);
+  flex-wrap: wrap;
+}
+
+.card {
+  @extend %card-style;
+  height: 600px;
+  overflow-y: scroll;
+  @include scroll-style($shadow-color, $primary-color);
+
+  img {
+    filter: drop-shadow(0 0 5px $shadow-color);
+  }
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
