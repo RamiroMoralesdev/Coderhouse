@@ -1,0 +1,18 @@
+.scale-hover {
+    :hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
+
+        .card-services {
+          width: 25%;
+          padding: 15px;
+          box-shadow: 10px 10px 30px var(--brother-color);
+          
+        }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
