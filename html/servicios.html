@@ -1,179 +1,39 @@
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="src/output.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <meta name="description" content="Expertos en desarrollo y diseño web. Creamos sitios web modernos, responsivos y personalizados para impulsar tu presencia en línea. Soluciones web innovadoras para tu negocio.">
-      <meta name="keywords" content="desarrollo web, diseño web, diseño grafico, videos para 15, sitios responsivos, presencia online, presencia en google, mantenimiento web, páginas personalizadas, desarrollo web wordpress, tienda online, diseño moderno, experiencia de usuario, optimización SEO, marketing digital">
-      <title>RM PRODUCCIONES &#8211; Desarrollo y diseño web</title>
+<!-- servicios.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubrí todos los servicios que ofrecemos">
+  <title>Servicios | Proyecto Web</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <style>
-        :root {
-        --primary-color: #2f2f2f;
-        --secundario-color: #0a0a23;
-        --brother-color: #2a2a2a;
-        --text-color: #ffffff;
-        --secondary-text-color: #ccc;
-        --shadow-moon: #087ec4;
-        --shadow-orange: #cc8338;
-        }
-
-        .btn-web:any-link {
-          color: #fff;
-          text-decoration: none;
-
-          &:hover {
-            color: #087ec4;
-          }
-        }
-
-        .card-services {
-          width: 25%;
-          padding: 15px;
-          box-shadow: 10px 10px 30px var(--brother-color);
-          
-        }
-
-        .navbar .navbar-nav .nav-item .nav-link {
-        background-color: var(--brother-color);
-        color: #ccc !important; 
-        padding: 20px;
-      }
-
-      #home h1 {
-        font-size: 5em;
-      }
-
-        @media all and (width <= 768px) {
-          .card-services {
-            width: 100%;
-          }
-
-
-
-          #mainNavbar.navbar-scrolled {
-            background-color: transparent;
-          }
-
-          #home h1 {
-            font-size: 2em;
-          }
-        }
-        
-
-    #mainNavbar {
-      transition: all 0.5s ease-in-out;
-      
-    }
-
-    /* Estilos de la navbar después del scroll */
-    #mainNavbar.navbar-scrolled {
-      width: 100%;
-      background-color: var(--brother-color);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-      </style>
-  </head>
-  <body>
-
-    <div class="whatsapp-link">
-      <a href="https://wa.link/sse4o0" target="_blank" rel="noopener noreferrer">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
-      </a>
-    </div>
-
-    <style>
-      .whatsapp-link {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-      }
-
-      .whatsapp-link a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 60px;
-        background-color: #25D366;
-        color: white;
-        border-radius: 50%;
-        text-decoration: none;
-        box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
-        transition: all 0.3s ease;
-      }
-
-      .whatsapp-link a:hover {
-        transform: scale(1.1);
-      }
-
-      @media (max-width: 768px) {
-        .whatsapp-link {
-          bottom: 10px;
-          right: 10px;
-        }
-
-        .whatsapp-link a {
-          width: 50px;
-          height: 50px;
-        }
-
-        .whatsapp-link svg {
-          width: 20px;
-          height: 20px;
-        }
-      }
-    </style>
-
-    <div class="w-100 vh-100" style="background-image: url(./src/assets/bg.jpg); background-repeat: no-repeat; background-size: cover;">
-
-      <!-- Barra de navegación responsive -->
-      <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">¿Quienes somos?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Galeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pongámonos en contacto!</a>
-              </li>
-            </ul>
-          </div>
+     <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">SOLUCIONES WEB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-          <!--Home-->
-          <section id="home" class="w-full h-screen flex flex-col flex-wrap justify-center items-center">
+    <main class="container mt-5">
 
-              <h1 class="text-text-color mb-0">RM PRODUCCIONES</h1>
-              <h3 class="text-text-color" >Creamos Soluciones</h3>
 
-          </section>
-
-        </div>
-
-          <h1 class="text-center my-5">Desarrollo Web</h1>
-
-          <section class="d-flex justify-center gap-5 flex-wrap px-5 ">
+     <section class="d-flex justify-center gap-5 flex-wrap px-5 ">
             
             <div class="card-services">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-aspect-ratio-fill my-3" viewBox="0 0 16 16">
@@ -181,7 +41,7 @@
               </svg>
               <h4>Sitios Web Responsive</h4>
               <p class="">Diseñamos sitios web que se adaptan perfectamente a cualquier dispositivo, garantizando una experiencia de usuario óptima en smartphones, tablets y computadoras.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -190,7 +50,7 @@
               </svg>
               <h4>Mobile First</h4>
               <p class="">Desarrollamos con enfoque en dispositivos móviles primero, asegurando una experiencia fluida y rápida en smartphones antes de escalar a pantallas más grandes.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -199,7 +59,7 @@
               </svg>
               <h4>Poscisionamiento en motores de busqueda SEO</h4>
               <p class="">Optimizamos tu sitio web para mejorar su visibilidad en los resultados de búsqueda, aumentando el tráfico orgánico y la presencia online de tu negocio.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -210,7 +70,7 @@
               </svg>
               <h4>Sitios Web Wordpress</h4>
               <p class="">Creamos sitios web profesionales y personalizados utilizando WordPress, ofreciendo una plataforma fácil de gestionar y actualizar para tu negocio o proyecto personal.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -220,7 +80,7 @@
               </svg>
             <h4>Priorizamos calidad y rendimiento</h4>
               <p class="">Nos enfocamos en crear sitios web de alta calidad y rendimiento óptimo, asegurando tiempos de carga rápidos y una experiencia de usuario fluida para maximizar la satisfacción y conversión de visitantes.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -230,13 +90,11 @@
               </svg>
               <h4>Sitios webs MultiLenguaje</h4>
               <p class="">Desarrollamos sitios web multilingües que amplían tu alcance global. Nuestras soluciones permiten una fácil gestión de contenido en múltiples idiomas, mejorando la accesibilidad y engagement de tu audiencia internacional.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
           </section>
 
           <section class="my-5 bg-black fs-1 text-center">
-
-          <a href="src/pages/index.html" class="btn-web">Que tipo de sitio web necesitas?</a>
           
         </section>
 
@@ -252,7 +110,7 @@
               </svg>
               <h4>Videos para eventos</h4>
               <p class="">Creamos videos profesionales para tus eventos especiales, capturando los momentos más importantes y emocionantes. Desde bodas hasta conferencias corporativas, nuestro equipo produce contenido audiovisual de alta calidad que perdurará en el tiempo.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -261,7 +119,7 @@
               </svg>
               <h4>Books Y Dipticos</h4>
               <p class="">Diseñamos books profesionales y dípticos atractivos para promocionar tu negocio o proyecto. Nuestros diseños combinan estética y funcionalidad, presentando tu información de manera clara y visualmente impactante para captar la atención de tu audiencia.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -271,7 +129,7 @@
               </svg>
               <h4>Tarjetas de presentacion, Flyers y Banners</h4>
               <p class="">Creamos materiales de marketing impactantes, desde tarjetas de presentación elegantes hasta flyers llamativos y banners de gran formato. Nuestros diseños personalizados ayudan a tu marca a destacar y comunicar tu mensaje de manera efectiva en cualquier entorno.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -281,7 +139,7 @@
               </svg>
               <h4>Email Marketing</h4>
               <p class="">Desarrollamos estrategias efectivas de email marketing para conectar con tu audiencia. Diseñamos campañas personalizadas, optimizamos tasas de apertura y conversión, y te ayudamos a construir relaciones duraderas con tus clientes a través de comunicaciones relevantes y atractivas.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
             <div class="card-services">
@@ -290,7 +148,7 @@
               </svg>
               <h4>Animaciones</h4>
               <p class="">Damos vida a tus ideas con animaciones dinámicas y atractivas. Ya sea para publicidad, presentaciones o contenido web, nuestras animaciones profesionales capturan la atención y transmiten tu mensaje de manera memorable y efectiva.</p>
-              <button class="btn-nav">Contratar Servicio</button>
+              <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
             </div>
 
           <div class="card-services">
@@ -301,71 +159,17 @@
             </svg>
             <h4>Conversion de VHS a Digital</h4>
             <p>Preservamos tus recuerdos convirtiendo tus cintas VHS antiguas a formato digital. Nuestro servicio de alta calidad asegura que tus videos familiares, eventos importantes y momentos nostálgicos se conserven en un formato moderno y accesible para las generaciones futuras.</p>
-            <button class="btn-nav">Contratar Servicio</button>
+            <button class="btn btn-primary"><a class="text-white" href="contacto.html">Contratar Servicio </a></button>
           </div>
         
           </section>
-          
-          <h2 class="text-center my-5">Quienes Somos?</h2>
-
-          <section class="w-100 my-3 px-3 d-flex flex-column flex-md-row justify-around gap-3 text-center">
-            
-
-            <div class="w-100 w-md-50 text-text-color px-4 border border-secondary rounded-3" style="background-color: var(--secundario-color);">
-              <img style="border-radius: 100%; filter: drop-shadow(5px 5px 50px  );" width="200px" class="m-auto" src="src/assets/59F6C3E9-4EE2-4810-A6D4-8F7FFBB07796.jpg" alt="Ramiro Morales">
-              <h2>Ramiro Morales</h2>
-              <h3>Desarrollador Y Diseñador Web</h3>
-              <p>Fundador</p>
-              <a href="ramiromorales.tech" class="btn btn-outline-light mt-3 mb-4" style="background-color: var(--brother-color); border-color: var(--shadow-moon); color: var(--text-color); transition: all 0.3s;">Website Personal</a>
-            </div>
-
-            <!-- <div class="w-100 w-md-50 text-text-color px-4 w-50 border border-secondary rounded-3" style="background-color: var(--secundario-color);">
-              <img style="border-radius: 100%; filter: drop-shadow(5px 5px 50px  );" width="200px" class="m-auto" src="src/assets/59F6C3E9-4EE2-4810-A6D4-8F7FFBB07796.jpg" alt="Ramiro Morales">
-              <h2>Stefano Rovitti</h2>
-              <h3>Desarrollador Web</h3>
-              <a href="ramiromorales.tech" class="btn btn-outline-light mt-3 mb-4" style="background-color: var(--brother-color); border-color: var(--shadow-moon); color: var(--text-color); transition: all 0.3s;">Website Personal</a>
-            </div> -->
-
-            
-
-          
-          </section>
-          
+  </main>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Proyecto Web</p>
+  </footer>
 
 
-
-
-
-        <footer class="w-full flex justify-center items-center mt-5" style="height: 10vh; background-image: url(./src/assets/bg.jpg); background-repeat: no-repeat; background-size: 100%; ">
-          <div class="text-text-color">
-            <p>Desarrollado por:
-            <a href="https://ramiromorales.tech/" target="_blank" style="color: #eee;">RamiroMoralesdev / RM Producciones</a>  
-            </p>
-          </div>
-        </footer>
-
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            var navbar = document.getElementById('mainNavbar');
-            var scrollThreshold = 500; // Ajusta este valor según tus necesidades
-        
-            window.addEventListener('scroll', function() {
-              if (window.scrollY > scrollThreshold) {
-                navbar.classList.add('navbar-scrolled');
-              } else {
-                navbar.classList.remove('navbar-scrolled');
-              }
-            });
-          });
-
-        // Vercel Analytics
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-        </script>
-
-      <script defer src="/_vercel/insights/script.js"></script>
-  
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-  </body>
-  </html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="animaciones.js"></script>
+</body>
+</html>
