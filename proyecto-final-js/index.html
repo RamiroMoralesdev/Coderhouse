@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulador Ecommerce — ProyectoFinal - Ramiro Morales</span></title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar bg-light mb-4">
+<div class="container">
+<div>
+<button id="btn-cart" class="btn btn-outline-primary">Carrito (<span id="cart-count">0</span>)</button>
+<button id="btn-clearCart">Vaciar carrito</button>
+</div>
+</div>
+</nav>
+
+
+<main class="container">
+<section id="products" class="row g-3"></section>
+
+
+<section id="cart-view" class="mt-4" style="display:none;">
+<h3>Carrito</h3>
+<div id="cart-list"></div>
+<div class="d-flex justify-content-between mt-3">
+<strong>Total: $<span id="cart-total">0</span></strong>
+<div>
+<button id="btn-clear" class="btn btn-sm btn-danger">Vaciar carrito</button>
+<button id="btn-checkout" class="btn btn-sm btn-success">Finalizar compra</button>
+</div>
+</div>
+</section>
+
+
+<section id="checkout" class="mt-4" style="display:none; max-width:720px;">
+<h3>Checkout</h3>
+<form id="checkout-form">
+<div class="mb-3">
+<label class="form-label">Nombre</label>
+<input id="name" class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input id="email" type="email" class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Dirección</label>
+<input id="address" class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Método de pago (simulado)</label>
+<select id="payment" class="form-select">
+<option value="card">Tarjeta de crédito</option>
+<option value="mercado">Mercado Pago</option>
+<option value="bank">Transferencia</option>
+</select>
+</div>
+<button class="btn btn-primary" type="submit">Pagar</button>
+<button id="btn-back" class="btn btn-secondary ms-2" type="button">Volver</button>
+</form>
+</section>
+
+
+</main>
+
+
+<script src="app.js"></script>
+</body>
+</html>

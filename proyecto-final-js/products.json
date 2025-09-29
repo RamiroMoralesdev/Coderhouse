@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Chocolate",
+        "price": 1200,
+        "stock": 10,
+        "img": "https://www.ferrerorocher.com/cl/sites/ferrerorocher20_cl/files/2021-05/gfx-12x.jpg?t=1750436763",
+        "description": "Bajon? Esta para unos ferrero rocher"
+    },
+    {
+        "id": 2,
+        "title": "Helado",
+        "price": 5200,
+        "stock": 20,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH-lRkZDPPKm7eOL4Me1W7tgQ16AzlJ6KYPl0RsZayy6r2E27dMI3ZxmzthBLhoCpsSFM&usqp=CAU",
+        "description": "1kg de helado de los sabores que mas te gusten"
+    },
+    {
+        "id": 3,
+        "title": "Vino",
+        "price": 3950,
+        "stock": 16,
+        "img": "https://saludconlupa.com/media/images/red-wine-pouring-from-bottle-glass.width-1920.jpg",
+        "description": "Quien se ha tomado todo el vino oh oh oh "
+    },
+    {
+        "id": 4,
+        "title": "Cerveza",
+        "price": 6500,
+        "stock": 5,
+        "img": "https://iocagroup.com/wp-content/uploads/2023/05/cerveza.webp",
+        "description": "Cerveza artesanal de la mejor calidad"
+    },
+    {
+        "id": 5,
+        "title": "Cerveza",
+        "price": 6500,
+        "stock": 5,
+        "img": "https://iocagroup.com/wp-content/uploads/2023/05/cerveza.webp",
+        "description": "Cerveza artesanal de la mejor calidad"
+    },
+    {
+        "id": 6,
+        "title": "Cerveza",
+        "price": 6500,
+        "stock": 5,
+        "img": "https://iocagroup.com/wp-content/uploads/2023/05/cerveza.webp",
+        "description": "Cerveza artesanal de la mejor calidad"
+    },
+    {
+        "id": 7,
+        "title": "Cerveza",
+        "price": 6500,
+        "stock": 5,
+        "img": "https://iocagroup.com/wp-content/uploads/2023/05/cerveza.webp",
+        "description": "Cerveza artesanal de la mejor calidad"
+    },
+    {
+        "id": 8,
+        "title": "Cerveza",
+        "price": 6500,
+        "stock": 5,
+        "img": "https://iocagroup.com/wp-content/uploads/2023/05/cerveza.webp",
+        "description": "Cerveza artesanal de la mejor calidad"
+    },
+    {
+        "id": 9,
+        "title": "Cerveza",
+        "price": 6500,
+        "stock": 5,
+        "img": "https://iocagroup.com/wp-content/uploads/2023/05/cerveza.webp",
+        "description": "Cerveza artesanal de la mejor calidad"
+    },
+    {
+        "id": 10,
+        "title": "Cerveza",
+        "price": 6500,
+        "stock": 5,
+        "img": "https://iocagroup.com/wp-content/uploads/2023/05/cerveza.webp",
+        "description": "Cerveza artesanal de la mejor calidad"
+    }
+]
