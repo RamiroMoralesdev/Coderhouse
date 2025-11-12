@@ -4,8 +4,9 @@ import { db } from './firebase.js';
 // Obtener todos los productos
 export const getProducts = async () => {
   try {
+    // Collection devuelve todos los documentos de una products
     const productsCollection = collection(db, 'products');
-    const productsSnapshot = await getDocs(productsCollection);
+    const productsSnapshot = await getDocs(productsCollection); /*Espera la respuesta*/
     const products = productsSnapshot.docs.map(doc => ({
       id: doc.id,
       ...doc.data()
@@ -21,7 +22,7 @@ export const getProducts = async () => {
 export const getProductsByCategory = async (categoryId) => {
   try {
     const productsCollection = collection(db, 'products');
-    const q = query(productsCollection, where('category', '==', categoryId));
+    const q = query(productsCollection, where('category', '==', categoryId)); 
     const productsSnapshot = await getDocs(q);
     const products = productsSnapshot.docs.map(doc => ({
       id: doc.id,
